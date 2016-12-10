@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Homepage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -45,27 +45,44 @@
     }
     
     p1{
-      color: black;
+      color: #252628;
       font-size:25px;
       
     }
     
     h3{
-      color:black;
+      color:#252628;
       font-size:30px;
-      font-style:bold;
+      
     }
         h2{
       color:white;
       font-size:30px;
-      font-style:bold;
+      
     }
     
     .services{
       color:white;
       font-size:30px;
-      font-style:bold;
+      
     }
+    
+    input {
+    background-color:#252628;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+    input:hover {
+    background-color:black;
+    color: white;
+}
   </style>
 </head>
 <body>
@@ -82,7 +99,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li  class="active"><a href="#">Home</a></li>
+        <li  class="active"><a href="Index.html">Home</a></li>
         <li><a href="product.html">Products</a></li>
         <li><a href="Deals.html">Deals</a></li>
         <li><a href="#">Staff</a></li>
@@ -105,16 +122,18 @@
       <div class="item active">
         <img src="deal1.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>Our Deals</h3>
-          <p1>Save More Today</p1>
+          <form>
+            <input type="button" value="View >" onclick="window.location.href='Deals.html'" />
+          </form>
         </div>      
       </div>
 
       <div class="item">
         <img src="sale.jpg" alt="Image">
         <div class="carousel-caption">
-          <h3>Our Products</h3>
-          <p1>See Whats On Sale</p1>
+          <form>
+            <input type="button" value="View >" onclick="window.location.href='product.html'" />
+          </form>
         </div>      
       </div>
     </div>
@@ -130,6 +149,72 @@
     </a>
 </div>
   
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h4>Products</h4>
+      <p2>View our range of products.</p2>
+      <form>
+            <input type="button" class="btn1" value="Click" onclick="window.location.href='product.html'" />
+      </form>
+    </div>
+    <div class="col-sm-3">
+      <h4>Deals</h4>
+      <p2 class="text-center">See what we have on sale.</p2>
+      <form>
+            <input type="button" class="btn1" value="Click" onclick="window.location.href='Deals.html'" />
+      </form>
+    </div>
+    <div class="col-sm-3">
+      <h4>Staff</h4>        
+      <p2>For our members of staff, view stock.</p2>
+      <form>
+            <input type="button" class="btn1" value="Click" onclick="window.location.href='staff.html'" />
+      </form>
+    </div>
+    <div class="col-sm-3">
+      <h4>Contact</h4>        
+      <p2>Leave us feedback on how well we did.</p2>
+      <form>
+            <input type="button" class="btn1" value="Click" onclick="window.location.href='Contact.html'" />
+      </form>
+      
+    </div>
+  </div>
+</div>
+  <style>
+    h4{
+      color:white;
+      font-size:50px;
+      
+    }
+    p2{
+      color:white;
+      font-size:15px;
+      
+    }
+    
+    .btn1{
+    background-color: #6a6c70;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  </style>
+  
+  <div>
+    <h1>
+      
+    </h1>
+    
+  </div>
 
 
 <footer class="container-fluid text-center">

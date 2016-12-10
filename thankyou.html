@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Feedback</title>
+ <title>Thank you</title>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="css/bootstrap.min.css">
- <script
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -14,8 +13,19 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div class="container">
 
  <center>
- <h1> Thank you for leaving your feedback </h1>
+ <h1><b>Thank you for leaving your feedback </b></h1>
  <p>We will try to get back to you as soon as possible</p>
+ </center>
+
+</div>
+
+<div class="container">
+
+ <center>
+ <h3>Click here to go back to the homepage</h3>
+          <form>
+            <input type="button" value="Click Me" onclick="window.location.href='Index.html'" />
+          </form>
  </center>
 
 </div>
@@ -25,7 +35,34 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      color:white;
     }
    
+   h1{
+     font-size:80px;
+     font-style:bold;
+     
+   }
    
+   p{
+    font-size:20px;  
+   }
+   
+   input{
+     
+    background-color:white;
+    border: none;
+    color:#252628;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+   }
+   
+   input:hover {
+    background-color:#252628;
+    color: white;
+}
  </style>
  
 </body>
