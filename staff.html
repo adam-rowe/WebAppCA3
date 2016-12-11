@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Staff</title>
+  <title>Staff Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,7 +19,7 @@
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
       margin-bottom: 0px;
-      background-image: url("back.png");
+      background-image: url("./images/back.png");
       padding: 0px;
       color:white;
     }
@@ -39,12 +39,11 @@
     }
     
     body{
-      background-image: url("back.png");
+      background-image: url("./images/back.png");
       
       
     }
     
-
     
   </style>
 </head>
@@ -62,10 +61,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li ><a href="Index.html">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li class="active"><a href="#">Contact</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="Deals.html">Deals</a></li>
+        <li class="active"><a href="staff.html">Staff</a></li>
+        <li><a href="Contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -87,10 +86,8 @@
  <style>
   
  
-
     <style>
   
-
 .body{
     position: fixed; 
     overflow-y: scroll;
@@ -101,20 +98,17 @@
   bottom: -40px;
   width: auto;
   height: auto;
-  background-image: url("back.png");
+  background-image: url("./images/back.png");
   background-size: cover;
   -webkit-filter: blur(0px);
   
 }
-
-
 .header{
   position: absolute;
   top: calc(50% - 35px);
   left: calc(50% - 255px);
   
 }
-
 .header div{
   float: left;
   color: #fff;
@@ -122,11 +116,9 @@
   font-size: 40px;
   font-weight: 200;
 }
-
 .header div span{
   color: #F29E20 ;
 }
-
 .login{
   position: absolute;
   top: calc(50% - 75px);
@@ -136,7 +128,6 @@
   padding: 10px;
   
 }
-
 .login input[type=text]{
   width: 250px;
   height: 30px;
@@ -149,7 +140,6 @@
   font-weight: 400;
   padding: 4px;
 }
-
 .login input[type=password]{
   width: 250px;
   height: 30px;
@@ -163,7 +153,6 @@
   padding: 4px;
   margin-top: 10px;
 }
-
 .login input[type=button]{
   width: 260px;
   height: 35px;
@@ -178,33 +167,26 @@
   padding: 6px;
   margin-top: 10px;
 }
-
 .login input[type=button]:hover{
   opacity: 0.8;
 }
-
 .login input[type=button]:active{
   opacity: 0.6;
 }
-
 .login input[type=text]:focus{
   outline: none;
   border: 1px solid rgba(255,255,255,0.9);
 }
-
 .login input[type=password]:focus{
   outline: none;
   border: 1px solid rgba(255,255,255,0.9);
 }
-
 .login input[type=button]:focus{
   outline: none;
 }
-
 ::-webkit-input-placeholder{
    color: rgba(255,255,255,0.6);
 }
-
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
 }
@@ -239,7 +221,7 @@ function check(form)
  
  if(form.userid.value == "admin" && form.pswrd.value == "admin")
   {
-    window.open('staff2.html')
+    window.open('staff1.html')
   }
  else
  {
@@ -281,12 +263,8 @@ function check(form)
         font-size: 27px;
         padding: 10px;
   }
-
-
-
 <footer class="container-fluid text-center">
   <p>Online Store Copyright</p>  
 </footer>
-
 </body>
 </html>
