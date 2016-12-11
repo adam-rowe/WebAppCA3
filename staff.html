@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Staff</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+      
+      
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0px;
+      background-image: url("back.png");
+      padding: 0px;
+      color:white;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #252628;
+      padding: 50px;
+      color: white;
+      margin-bottom: 0px;
+    }
+    
+      .row {
+      margin-bottom: 0px;
+      border-radius: 0px;
+      padding:25px;
+    }
+    
+    body{
+      background-image: url("back.png");
+      
+      
+    }
+    
+
+    
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="Index.html">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li class="active"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  
+<div class="jumbotron">
+   <div class="col-md-12 text-right">
+  <div class="container">
+    <div class="col-md-4">
+    
+    </div>
+    <div class="col-md-5 text-center">
+
+    </div>
+  </div>
+</div>
+</div>
+ <style>
+  
+ 
+
+    <style>
+  
+
+.body{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url("back.png");
+  background-size: cover;
+  -webkit-filter: blur(0px);
+  
+}
+
+
+.header{
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 255px);
+  
+}
+
+.header div{
+  float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.header div span{
+  color: #F29E20 ;
+}
+
+.login{
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  
+}
+
+.login input[type=text]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=button]{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+  opacity: 0.8;
+}
+
+.login input[type=button]:active{
+  opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+</style>
+
+  
+
+</head>
+
+<body oncontextmenu="return false">
+
+  <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+      <div>Staff<span>Login</span></div>
+    </div>
+    <br>
+    <form name="login">
+    <div class="login">
+        <input type= "text" placeholder= "Username" name= "userid"><br>
+        <input type= "password" placeholder= "Password" name= "pswrd"><br>
+        <input type= "button" onclick= "check(this.form)" value= "Login"/>
+    </div>
+
+
+
+</form>
+
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "admin" && form.pswrd.value == "admin")
+  {
+    window.open('staff2.html')
+  }
+ else
+ {
+   alert("Username and Password did not match!")
+  }
+}
+</script>
+</body>
+
+  
+  
+
+<div class="row text-center" id="details">
+ 
+        </div>
+    </div>
+</div>
+
+<style>
+  btn{
+    color:white;
+    background-color:#252628;
+    
+    
+  }
+  legend{
+    color:black;
+    
+    
+  }
+  p{
+    font-size: 25px;
+    color:black;
+    
+    
+  }
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+  }
+
+
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+</footer>
+
+</body>
+</html>
